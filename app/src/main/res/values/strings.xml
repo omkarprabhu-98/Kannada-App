@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KanadaApp</string>
+    <string name="numbers">numbers</string>
+    <string name="family_members">family members</string>
+    <string name="phrases">Phrases</string>
+    <string name="common_words">common words</string>
+</resources>

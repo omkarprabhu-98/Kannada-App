@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.adminomkar.kanadaapp.MainActivity">
+
+    <TextView
+        style="@style/bars"
+        android:id="@+id/numbers"
+        android:text="@string/numbers"
+        android:textColor="#D50000"
+        android:background="@drawable/border"
+        />
+    <TextView
+        style="@style/bars"
+        android:id="@+id/familymem"
+        android:text="@string/family_members"
+        android:layout_below="@+id/numbers"
+        android:textColor="#3F51B5"
+        android:background="@drawable/border"
+
+        />
+    <TextView
+        style="@style/bars"
+        android:id="@+id/cwords"
+        android:text="@string/common_words"
+        android:layout_below="@+id/familymem"
+        android:background="@drawable/border"
+
+        android:textColor="#8BC34A"/>
+
+    <TextView
+        style="@style/bars"
+        android:id="@+id/phrases"
+        android:text="@string/phrases"
+        android:textColor="#E65100"
+        android:layout_below="@+id/cwords"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+        />
+</RelativeLayout>
