@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,40 +12,72 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#F5F5F5"
     tools:context="com.adminomkar.kanadaapp.MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberslay"
+            android:orientation="horizontal"
+            android:background="#D50000"
+            android:layout_margin="4dp"
+            >
+            <TextView
+                style="@style/bars"
+                android:id="@+id/numbers"
+                android:text="@string/numbers"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/familymemlay"
+            android:orientation="horizontal"
+            android:layout_below="@id/numberslay"
+            android:layout_margin="4dp"
+            android:background="#D50000"
 
-    <TextView
-        style="@style/bars"
-        android:id="@+id/numbers"
-        android:text="@string/numbers"
-        android:textColor="#D50000"
-        android:background="@drawable/border"
+            >
+           <TextView
+               style="@style/bars"
+               android:text="@string/family_members"
+               android:id="@+id/familymem"
+
         />
-    <TextView
-        style="@style/bars"
-        android:id="@+id/familymem"
-        android:text="@string/family_members"
-        android:layout_below="@+id/numbers"
-        android:textColor="#3F51B5"
-        android:background="@drawable/border"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cwordslay"
+            android:layout_below="@id/familymemlay"
+            android:background="#D50000"
+            android:layout_margin="4dp"
+            >
+
+            <TextView
+                style="@style/bars"
+                android:text="@string/common_words"
+                android:id="@+id/cwords" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phraseslay"
+            android:layout_below="@+id/cwordslay"
+            android:background="#D50000"
+            android:layout_margin="4dp"
+            >
+
+            <TextView
+                style="@style/bars"
+                android:text="@string/phrases"
+                android:id="@+id/phrases"
+
+                android:layout_alignParentStart="true"
 
         />
-    <TextView
-        style="@style/bars"
-        android:id="@+id/cwords"
-        android:text="@string/common_words"
-        android:layout_below="@+id/familymem"
-        android:background="@drawable/border"
+        </LinearLayout>
 
-        android:textColor="#8BC34A"/>
-
-    <TextView
-        style="@style/bars"
-        android:id="@+id/phrases"
-        android:text="@string/phrases"
-        android:textColor="#E65100"
-        android:layout_below="@+id/cwords"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/border"
-        />
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

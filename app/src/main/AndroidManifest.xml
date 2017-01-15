@@ -4,16 +4,31 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/kannada_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".NumbersActivity"
+            android:label="Numbers"
+            />
+        <activity android:name=".FamilyMembersActivity"
+            android:label="Family Members"
+            />
+        <activity android:name=".CommonWordsActivity"
+            android:label="Common words"
+            />
+        <activity android:name=".PhrasesActivity"
+            android:label="Phrases"
+            >
+
         </activity>
     </application>
 
