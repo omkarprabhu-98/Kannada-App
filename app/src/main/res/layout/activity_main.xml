@@ -38,7 +38,6 @@
                 style="@style/bars"
                 android:id="@+id/numbers"
                 android:text="@string/numbers"
-
                 android:layout_height="match_parent" />
         </LinearLayout>
         <LinearLayout
@@ -66,7 +65,7 @@
                android:text="@string/family_members"
                android:id="@+id/familymem"
 
-        />
+                android:layout_height="81dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,7 +116,7 @@
                 android:text="@string/phrases"
                 android:id="@+id/phrases"
 
-                android:layout_alignParentStart="true"
+                android:layout_height="match_parent"
 
         />
         </LinearLayout>

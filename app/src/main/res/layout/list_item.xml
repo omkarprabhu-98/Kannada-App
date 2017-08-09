@@ -25,17 +25,14 @@
         >
     <TextView
         android:id="@+id/kannadatext"
-
-
         style="@style/barsfornumbers"
         />
 
         <TextView
             android:id="@+id/engtext"
-
             android:layout_below="@id/kannadatext"
             style="@style/barsfornumbers"
-            android:textSize="25sp"
+            android:textSize="20sp"
 
             />
     </LinearLayout>

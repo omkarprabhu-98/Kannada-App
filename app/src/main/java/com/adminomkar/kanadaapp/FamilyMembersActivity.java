@@ -1,12 +1,10 @@
 package com.adminomkar.kanadaapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
-import java.util.ArrayList;
 
-import static android.R.attr.id;
+import java.util.ArrayList;
 
 public class FamilyMembersActivity extends AppCompatActivity {
 
@@ -18,17 +16,18 @@ public class FamilyMembersActivity extends AppCompatActivity {
         /* Word w=new Word("kannada","english);
         family.add(w);
          */
-        family.add(new Word(" Appa","How are you?",));
-        family.add(new Word("Amma","What are you doing?"));
-        family.add(new Word(" Appa","What is the time?"));
-        family.add(new Word("Amma","I do not know Kannada"));
-        family.add(new Word(" Appa","Can you talk in Hindi or English?"));
-        family.add(new Word("Amma","Could you write it down please?"));
-        family.add(new Word(" Appa","Father"));
-        family.add(new Word("Amma","Mother"));
-        family.add(new Word(" Appa","Father"));
-        family.add(new Word("Amma","Mother"));
-        family.add(new Word(" Appa","Father"));
+
+        family.add(new Word(" Appa","Father",R.drawable.family_father));
+        family.add(new Word("Amma","Mother", R.drawable.family_mother));
+        family.add(new Word("Maga","Son", R.drawable.family_son));
+        family.add(new Word("Magalu","Daughter", R.drawable.family_daughter));
+        family.add(new Word("Anna","Older Brother", R.drawable.family_older_brother));
+        family.add(new Word("Akka","Older Sister", R.drawable.family_older_sister));
+        family.add(new Word("Thamma","Younger Brother", R.drawable.family_younger_brother));
+        family.add(new Word("Thangi","Younger Sister", R.drawable.family_younger_sister));
+        family.add(new Word("Ajja","Grandfather", R.drawable.family_grandfather));
+        family.add(new Word("Ajji","Grandmother", R.drawable.family_grandmother));
+
 
 
 
